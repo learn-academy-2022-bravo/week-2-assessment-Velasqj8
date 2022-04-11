@@ -36,57 +36,74 @@ const num3 = -7
 // Expected output: "-7 is not divisible by three"
 
 describe("divisbleBy3", () => {
-  const num1 = 15
-  const num2 = 0
-  const num3 = -7
-  it("takes a number as an argument and decides if the number is evenly divisble by three or not", () => {
-    expect(divisbleBy3(num1)).toEqual("15 is divisible by three")
-    expect(divisbleBy3(num2)).toEqual("0 is divisible by three")
-    expect(divisbleBy3(num3)).toEqual("-7 is not divisible by three")
+  it("returns is divisble by three or not", () => {
+    expect(divisbleBy3(num1)).toEqual("is divisible by three")
+    expect(divisbleBy3(num2)).toEqual("is not divisible by three")
+    expect(divisbleBy3(num3)).toEqual("is not divisible by three")
   })
 })
 
 FAIL  ./code-challenges.test.js
  divisbleBy3
-   ✕ takes a number as an argument and decides if the number is evenly divisble by three or not
+   ✕ returns is divisble by three or not (1 ms)
 
- ● divisbleBy3 › takes a number as an argument and decides if the number is evenly divisble by three or not
+ ● divisbleBy3 › returns is divisble by three or not
 
    ReferenceError: divisbleBy3 is not defined
 
-Pseudocode
-create a function named divisbleBy3
-input - datatype Boolean value
-methods to be used - conditional
-output - datatype string
+// Pseudocode
+// create a function named divisbleBy3
+// input - datatype Boolean value
+// Use a conditional statment to decide if numbers divisble by 3
+// Expected output: "is divisble by three", "is not divisble by three", "is not divisble by three"
 
-let divisbleBy3 = (num1,num2,num) => {
-  if(divisble3 == 2 % 0) {
-    return true
-  } else if(divisble3 != 2 % 0) {
-    return false
+// b) Create the function that makes the test pass.
+
+const divisbleBy3 = (number) => {
+  if(number / 3) {
+    return "is divisble by three"
+  } else {
+    return "is not divisble by three"
   }
-}
-console.log(divisbleBy3())
-
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-//const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-//const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
+const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
 describe("capitalized", () => {
-  const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-  const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
-  it("takes in an array of words and returns an array with all the words capitalized", () => {
-    expect(capitalized(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+  it("returns an array with all the words capitalized", () => {
+    expect(capitalized(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]),
+    expect(capitalized(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
   })
 })
 
+FAIL  ./code-challenges.test.js
+ capitalized
+   ✕ returns an array with all the words capitalized
+
+ ● capitalized › returns an array with all the words capitalized
+
+   ReferenceError: capitalized is not defined
+
+// Pseudocode
+// Create a function called capitalized
+// input - array datatype
+// use built in method toUpperCase()
+// Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+// Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
+
 // b) Create the function that makes the test pass.
+
+const capitalized = (array) => {
+  let nouns1 = randomNouns1.toUpperCase
+  let nouns2 = randomNouns2.toUpperCase
+  return array.toUpperCase(nouns1)
+  return arraytoUpperCase(nouns2)
+}
 
 
 
@@ -94,22 +111,44 @@ describe("capitalized", () => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
-//const vowelTester1 = "learn"
+const vowelTester1 = "learn"
 // Expected output: 1
-//const vowelTester2 = "academy"
+const vowelTester2 = "academy"
 // Expected output: 0
-//const vowelTester3 = "challenges"
+const vowelTester3 = "challenges"
 // Expected output: 2
 
-describe("vowel", () => {
-  const vowelTester1 = "learn"
-  const vowelTester2 = "academy"
-  const vowelTester3 = "challenges"
-  it("takes in a string and logs the index of the first vowel", () => {
-    expect(vowel(vowelTester1)).toEqual(1)
-    expect(vowel(vowelTester2)).toEqual(0)
-    expect(vowel(vowelTester3)).toEqual(2)
+describe("firstVowel", () => {
+  it("returns the index of the first vowel.", () => {
+    expect(firstVowel(vowelTester1)).toEqual("learn"),
+    expect(firstVowel(vowelTester2)).toEqual("academy")
+    expect(firstVowel(vowelTester3)).toEqual("challenges")
   })
 })
 
+FAIL  ./code-challenges.test.js
+ firstVowel
+   ✕ returns the index of the first vowel. (1 ms)
+
+ ● firstVowel › returns the index of the first vowel.
+
+   ReferenceError: firstVowel is not defined
+
+// Pseudocode
+// Create a function called firstVowel
+// input - string datatype
+// Use for loop to evaluate first vowel.
+// Expected output: 1
+// Expected output: 0
+// Expected output: 2
+
 // b) Create the function that makes the test pass.
+
+const firstVowel = () => {
+  let index = []
+  for(let i = 0; i < str.length; i++) {
+    if (str[i] === [a,e,i,o,u,A,E,I,O,U]) {
+      index.push(i);
+    }
+  }
+}
