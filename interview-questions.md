@@ -64,6 +64,6 @@ Research and define the following terms to the best of your ability.
 
 3. React state: A React object that is built-in and used to contain data or information about the component.
 
-4. React lifecycle methods: The three categories of lifecycle methods are: mounting, updating, and unmounting.
+4. React lifecycle methods: Special methods that are built into React to be used on components while in the DOM.
 
-5. DOM: This is a website platform and language-neutral interface that gives programs and scripts the ability to dynamically access and update a documents structure, content, and style.
+5. DOM: A website platform and language-neutral interface that gives programs and scripts the ability to dynamically access and update documents structure, content, and style.
