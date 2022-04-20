@@ -38,11 +38,8 @@
 describe("divisibleBy3", () => {
   it("takes a number as an argument and decides if the number is evenly divisible by three or not", () => {
     const num1 = 15
-    // Expected output: "15 is divisible by three"
     const num2 = 0
-    // Expected output: "0 is divisible by three"
     const num3 = -7
-    // Expected output: "-7 is not divisible by three"
     expect(divisibleBy3(num1)).toEqual("15 is divisible by three")
     expect(divisibleBy3(num2)).toEqual("0 is divisible by three")
     expect(divisibleBy3(num3)).toEqual("-7 is not divisible by three")
@@ -72,9 +69,6 @@ const divisibleBy3 = (number) => {
     return `${number} is not divisible by three`
   }
 }
-console.log(divisibleBy3(num1))
-console.log(divisibleBy3(num2))
-console.log(divisibleBy3(num3))
 
 // PASS  ./code-challenges.test.js
 //  divisibleBy3
@@ -92,9 +86,7 @@ console.log(divisibleBy3(num3))
 describe("capitalized", () => {
   it("returns an array with all the words capitalized", () => {
     const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-    // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
     const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
-    // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
     expect(capitalized(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]),
     expect(capitalized(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
   })
@@ -111,7 +103,9 @@ describe("capitalized", () => {
 // Pseudocode
 // Create a function called capitalized
 // input - array datatype
-// use built in method toUpperCase()
+// Use built in method toUpperCase()
+// Use map method to iterate each element in array
+// Use substring method to extract characters
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
@@ -141,11 +135,8 @@ console.log(capitalized(randomNouns2))
 describe("firstVowel", () => {
   it("takes in a string and logs the index of the first vowel", () => {
     const vowelTester1 = "learn"
-    // Expected output: 1
     const vowelTester2 = "academy"
-    // Expected output: 0
     const vowelTester3 = "challenges"
-    // Expected output: 2
     expect(firstVowel(vowelTester1)).toEqual(1),
     expect(firstVowel(vowelTester2)).toEqual(0)
     expect(firstVowel(vowelTester3)).toEqual(2)
@@ -163,7 +154,9 @@ describe("firstVowel", () => {
 // Pseudocode
 // Create a function called firstVowel
 // input - string datatype
-// Use for loop to evaluate first vowel.
+// Use for loop to evaluate first vowel
+// Use built in method length to determine string length
+// Use built in method includes to iterate each character in each string
 // Expected output: 1
 // Expected output: 0
 // Expected output: 2
@@ -171,7 +164,7 @@ describe("firstVowel", () => {
 // b) Create the function that makes the test pass.
 
 const firstVowel = (string) => {
-  let vowelFinder = 'aeiou,AEIOU'
+  let vowelFinder = 'aeiouAEIOU'
   for(let i = 0; i < string.length; i++) {
     if (vowelFinder.includes(string[i])) {
       return i;
