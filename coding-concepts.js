@@ -32,7 +32,7 @@ b) Verify and explain: My answer was correct, the lack of a return statement ret
 //  console.log(multBy2)
 
 a) Your answer: This code will take the multBy2 array and return a new array multipled by 2 [8, 10, 12, 14, 16].
-b) Verify and explain: My answer was correct, the code took the var array and returned a new one multipled by 2 [ 8, 10, 12, 14, 16 ].
+b) Verify and explain: My answer was correct, the code took the var multBy2 array and returned a new one multipled by 2 [ 8, 10, 12, 14, 16 ].
 
 
 // --------------------4) What will this log?
@@ -41,7 +41,7 @@ b) Verify and explain: My answer was correct, the code took the var array and re
 // console.log(onlyOdds)
 
 a) Your answer: This code will log only odd numbers [11, 13, 15].
-b) Verify and explain: My answer was correct, the code logged only the odd numbers [ 11, 13, 15 ].
+b) Verify and explain: My answer was correct the code logged only the odd numbers [ 11, 13, 15 ], because of the .filter method.
 
 
 // --------------------5) What will this log?
@@ -55,7 +55,7 @@ b) Verify and explain: My answer was correct, the code logged only the odd numbe
 // console.log(myCodingSkills.languages[0])
 
 a) Your answer: The code will log JavaScript.
-b) Verify and explain: My answer was correct, and the code logged JavaScript.
+b) Verify and explain: My answer was correct, and the code logged JavaScript because console.log was told to return the var myCodingSkills.languages[0].
 
 
 // --------------------STRETCH: What will this log?
